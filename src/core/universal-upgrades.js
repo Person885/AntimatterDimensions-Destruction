@@ -93,7 +93,7 @@ class UniversalUpgradeState extends BitPurchasableMechanicState {
 //}
 }
 UniversalUpgradeState.index = mapGameData(
-  GameDatabase.universalUpgrades,
+  GameDatabase.destructionUpgradesUniversal,
   config => new UniversalUpgradeState(config));
 
 /**
