@@ -762,6 +762,11 @@ window.player = {
       showBought: false,
     }
   },
+  universal: {
+    upgradeBits: 0,
+    upgReqs: 0,
+    reqLock: 0,
+  },
   isGameEnd: false,
   tabNotifications: new Set(),
   triggeredTabNotificationBits: 0,
