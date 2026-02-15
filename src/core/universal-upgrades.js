@@ -27,7 +27,7 @@ class UniversalUpgradeState extends BitPurchasableMechanicState {
   }
 
   get currency() {
-    return Currency.FragmentedUniverses;
+    return Currency.FracturedUniverses;
   }
 
   get bitIndex() {
