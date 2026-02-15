@@ -23,7 +23,7 @@ export const destructionUpgradesUniversal = [
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     canLock: true,
     lockEvent: "sacrifice",
-    description: "multiply antimatter dimensions based on total antimatter",
+    description: "Multiply antimatter dimensions based on total antimatter",
     effect: () => UniversalUpgrade(6).isBought ? Decimal.add(1, Decimal.log10(player.records.totalAntimatter)): Decimal.add(1, Decimal.sqrt(Decimal.log10(player.records.totalAntimatter))),
     formatEffect: value => formatX(value, 2, 2)
   },
