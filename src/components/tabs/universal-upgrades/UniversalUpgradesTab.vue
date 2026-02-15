@@ -44,7 +44,7 @@ export default {
       <br>
     </div>
     <div
-      v-for="row in 4"
+      v-for="row in 2"
       :key="row"
       class="l-reality-upgrade-grid__row"
     >
