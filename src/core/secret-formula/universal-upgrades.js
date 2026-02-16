@@ -86,7 +86,7 @@ export const destructionUpgradesUniversal = [
     cost: 2,
     requirement: () => `the finite infinity purchased and reaching infinity with 1 dimboost(hint:not 0 galaxies)`,
     hasFailed: () => player.dimensionBoosts>1,
-    checkRequirement: () => player.dimensionBoosts<=0 && UniversalUpgrade(3).isBought,
+    checkRequirement: () => player.dimensionBoosts<=1 && UniversalUpgrade(3).isBought,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     canLock: true,
     lockEvent: "gain another dimboost",
