@@ -8,7 +8,7 @@ export default {
   },
   data() : {
     return {
-    frUn: new Decimal()
+    frUn: new Decimal();
   };
     },
   computed: {
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     update() {
-      this.frUn = player.destruction.fracturedUniverses
+      this.frUn = player.destruction.fracturedUniverses;
     },
     id(row, column) {
       return (row - 1) * 4 + column - 1;
@@ -33,9 +33,7 @@ export default {
 
 <template>
   <div class="l-reality-upgrade-grid">
-    <div>
-      you have {{ frUn }} fractured universes
-      </div>
+    <div> you have {{ format(frUn) }} fractured universes</div>
     <div
       v-for="row in 2"
       :key="row"
