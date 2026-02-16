@@ -91,7 +91,7 @@ class UniversalUpgradeState extends BitPurchasableMechanicState {
   onPurchased() {
     EventHub.dispatch(GAME_EVENT.UNIVERSAL_UPGRADE_BOUGHT);
     const id = this.id;
-    if(id==8){
+    if(id==5){
       Achievement(43).unlock()}
 }
 }
