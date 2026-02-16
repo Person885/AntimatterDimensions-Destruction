@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     update() {
-      this.frUn = Currency.fracturedUniverses.mantissa *(Math.pow(10, Currency.fracturedUniverses.exponent);
+      this.frUn.copyFrom(player.destruction.fracturedUniverses);
     },
     id(row, column) {
       return (row - 1) * 4 + column - 1;
@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div class="l-reality-upgrade-grid">
-    <div> you have {{ frUn }} fractured universes</div>
+    <div> you have {{ format(frUn) }} fractured universes</div>
     <br>
     <div
       v-for="row in 2"
