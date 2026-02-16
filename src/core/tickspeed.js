@@ -24,7 +24,7 @@ export function getTickSpeedMultiplier() {
   if (InfinityChallenge(3).isRunning) return DC.D1;
   if (Ra.isRunning) return DC.C1D1_1245;
   let galaxies = effectiveBaseGalaxies();
-  const effects = Effects.product(
+  let effects = Effects.product(
     InfinityUpgrade.galaxyBoost,
     InfinityUpgrade.galaxyBoost.chargedEffect,
     BreakInfinityUpgrade.galaxyBoost,
