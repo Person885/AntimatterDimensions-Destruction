@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     update() {
-      this.frUn = player.destruction.fracturedUniverses;
+      this.frUn = Currency.fracturedUniverses;
     },
     id(row, column) {
       return (row - 1) * 4 + column - 1;
@@ -34,6 +34,7 @@ export default {
 <template>
   <div class="l-reality-upgrade-grid">
     <div> you have {{ format(frUn) }} fractured universes</div>
+    <br>
     <div
       v-for="row in 2"
       :key="row"
