@@ -839,5 +839,10 @@ function lockAchievementsOnReality() {
   for (const achievement of Achievements.preReality) {
     achievement.lock();
   }
+  if (UniversalUpgrade(5).isBought) {
+    Achievement(35).unlock()
+    Achievement(43).unlock()
+    Achievement(76).unlock()
+  }
   player.reality.achTimer = 0;
 }
