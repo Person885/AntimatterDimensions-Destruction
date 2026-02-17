@@ -113,7 +113,7 @@ export const tabs = [
         name: "Multiplier Breakdown",
         symbol: "<i class='fas fa-calculator'></i>",
         component: "MultiplierBreakdownTab",
-        condition: () => PlayerProgress.infinityUnlocked(),
+        condition: () => false,
         id: 3,
         hidable: true,
       },
@@ -507,7 +507,7 @@ export const tabs = [
       {
         key: "universal",
         name: "Universal",
-        symbol: "<i class='fas fa-trophy'></i>",
+        symbol: "⚛",
         component: "UniversalUpgradesTab",
         id: 0,
         hidable: true,
