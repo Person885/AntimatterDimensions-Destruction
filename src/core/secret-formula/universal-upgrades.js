@@ -28,7 +28,7 @@ export const destructionUpgradesUniversal = [
     formatEffect: value => formatX(value, 2, 2)
   },
   {
-    name: "The Fintite Infinity",
+    name: "The Finite Infinity",
     id: 3,
     cost: 1,
     requirement: "Infinity with at most 4 Dimension Boosts.",
@@ -81,7 +81,7 @@ export const destructionUpgradesUniversal = [
     effect: () => 1,
   },
   {
-    name: "Purified infinity",
+    name: "Purified Infinity",
     id: 7,
     cost: 2,
     requirement: () => `The Finite Infinity purchased and reaching Infinity with 1 Dimension Boost (Hint:not 0 Galaxies).`,
