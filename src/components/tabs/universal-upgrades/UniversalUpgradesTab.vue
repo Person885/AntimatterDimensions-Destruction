@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div class="l-reality-upgrade-grid">
-    <div> you have {{ format(frUn) }} fractured universes</div>
+    <div> you have {{ format(frUn) }} Fractured Universes.</div>
     <br>
     <div
       v-for="row in 2"
